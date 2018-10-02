@@ -1,3 +1,11 @@
 html {
   font-family: "Ubuntu Condensed", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-image: url("../images/seamless-starfield-texture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
