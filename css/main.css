@@ -21,13 +21,20 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 
-.btn-ghost {
+h1, .italic {
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, .7);
+}
+
+.btn {
+  background-color: transparent;
   border: 2px solid #90ccc3;
   display: inline-block;
   transition: background-color 250ms linear;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .btn p {
@@ -35,7 +42,44 @@ body {
   display: inline-block;
 }
 
+.btn-ghost {
+  border-color: #90ccc3;
+  display: inline-block;
+  z-index: 4;
+  position: absolute;
+  top: 100%;
+  left: 28%;
+  transition: top 150ms linear;
+}
+
+.thingie {
+  position: absolute;
+  width: 103%;
+  left: -2%;
+  border-radius: 4px;
+  z-index: 2;
+}
+
 .btn:hover {
   background-color: rgba(180, 255, 244, .2);
   border: 2px solid #90ccc3;
+  border-radius: 3px;
+}
+
+.btn-ghost:hover {
+  background-color: rgba(180, 255, 244, .2);
+  border: 2px solid #90ccc3;
+  border-radius: 3px;
+}
+
+.btn:focus {
+  background-color: rgba(180, 255, 244, .2);
+  border: 2px solid #90ccc3;
+}
+
+.btn-ghost:active {
+  background-color: rgba(180, 255, 244, .2);
+  border: 2px solid #90ccc3;
+  position: absolute;
+  top: 110%;
 }
