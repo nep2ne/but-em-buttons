@@ -4,8 +4,38 @@ html {
 }
 
 body {
-  background-image: url("../images/seamless-starfield-texture.jpg");
+  background-image: url("../images/starfield.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: left center;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.banner {
+  text-align: center;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-ghost {
+  border: 2px solid #90ccc3;
+  display: inline-block;
+  transition: background-color 250ms linear;
+}
+
+.btn p {
+  color: #b4fff4;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: rgba(180, 255, 244, .2);
+  border: 2px solid #90ccc3;
 }
